@@ -1,9 +1,6 @@
 package configuration
 
 import (
-	"net/http"
-
-	"github.com/gorilla/mux"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -25,20 +22,4 @@ func InitConfig() {
 
 func Current() Config {
 	return currentconfig
-}
-
-func RouterInit() *mux.Router {
-	router := mux.NewRouter()
-	router.Use(requestCorsMiddleware())
-	return router
-}
-
-// RequestCorsMiddleware is a middleware enabling cors each request arrive to web server
-func requestCorsMiddleware() mux.MiddlewareFunc {
-	return func(next http.Handler) http.Handler {
-		return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
-			w.Header().Set("Access-Control-Allow-Origin", "*")
-			next.ServeHTTP(w, req)
-		})
-	}
 }
