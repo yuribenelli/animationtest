@@ -1,3 +1,3 @@
-insert into relcharpow
+insert into rel_char_pow
 values
-(2,2),(2,3),(3,3),(3,1);
+(1,2),(1,3),(2,3),(2,1);

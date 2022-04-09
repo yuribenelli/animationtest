@@ -6,3 +6,7 @@ type Powers struct {
 	Description string
 	Damage      int
 }
+
+func (p Powers) TableName() string {
+	return "powers"
+}

@@ -10,3 +10,7 @@ type Characters struct {
 	Background string
 	SrcImage   string
 }
+
+func (c Characters) TableName() string {
+	return "characters"
+}
