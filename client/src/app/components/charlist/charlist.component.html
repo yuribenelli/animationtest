@@ -1,5 +1,5 @@
-<div>
+<div class="character-wrapper" *ngIf="charactersList.length > 0" >
 
-<<p>charlist works!</p>>
+  <app-pgcard *ngFor="let ch of charactersList" [character]="ch"></app-pgcard>
 
 </div>

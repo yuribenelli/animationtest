@@ -1,12 +1,10 @@
-<div class="character-wrapper" *ngFor="let ch of charactersList">
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <mat-card-title>{{ch.Name}}</mat-card-title>
-      <mat-card-subtitle>Medium</mat-card-subtitle>
-      <img mat-card-md-image src="http://localhost:4200/assets/damien.jpg" >
-    </mat-card-title-group>
-    <mat-card-content>
-      content
-    </mat-card-content>
-  </mat-card>
-</div>
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{character!.Name}}</mat-card-title>
+    <mat-card-subtitle>Medium</mat-card-subtitle>
+    <img mat-card-md-image src="http://localhost:4200/assets/damien.jpg" >
+  </mat-card-title-group>
+  <mat-card-content>
+    content
+  </mat-card-content>
+</mat-card>
