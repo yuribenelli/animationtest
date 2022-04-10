@@ -26,6 +26,4 @@ export class CharlistComponent implements OnInit {
     this.charactersList = data;
   }
 
-
-
 }
