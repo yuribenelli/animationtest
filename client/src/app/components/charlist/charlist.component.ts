@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-charlist',
@@ -11,5 +13,7 @@ export class CharlistComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }

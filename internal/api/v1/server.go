@@ -10,10 +10,10 @@ import (
 func RouterInit() *mux.Router {
 	router := mux.NewRouter()
 	router.Use(requestCorsMiddleware())
-	router.HandleFunc("/pg/{ID}", getOne(model.Characters{}))
+	router.HandleFunc("/character/{ID}", getOne(model.Characters{}))
 	router.HandleFunc("/power/{ID}", getOne(model.Powers{}))
-	router.HandleFunc("/pg", getAll([]model.Characters{}))
-	router.HandleFunc("/pg", getAll([]model.Powers{}))
+	router.HandleFunc("/character", getAll([]model.Characters{}))
+	router.HandleFunc("/power", getAll([]model.Powers{}))
 	return router
 
 }
