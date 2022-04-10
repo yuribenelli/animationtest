@@ -10,13 +10,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PgcardComponent implements OnInit {
 
-  charactersList : Character[] = [];
+  constructor(){}
+  ngOnInit():void{}
 
+
+
+
+  charactersList : Character[] = [];
+/*
   private http: HttpClient;
   constructor(h:HttpClient) {
     this.http = h;
    }
-
+/*
   ngOnInit(): void {
     this.refresh();
   }
@@ -27,5 +33,8 @@ export class PgcardComponent implements OnInit {
   private populate(data: Character[]){
     this.charactersList = data;
   }
+
+
+*/
 
 }

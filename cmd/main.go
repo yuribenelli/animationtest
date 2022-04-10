@@ -9,7 +9,6 @@ import (
 func main() {
 	//Iniziallizzo DB
 	configuration.InitConfig()
-	router := v1.RouterInit()
-	http.ListenAndServe("5800", router)
+	http.ListenAndServe("5800", v1.RouterInit())
 
 }
