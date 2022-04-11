@@ -2,9 +2,10 @@
   <mat-card-title-group>
     <mat-card-title>{{character!.Name}}</mat-card-title>
     <mat-card-subtitle>{{character!.Race}}, {{character!.Class}}</mat-card-subtitle>
-    <img mat-card-md-image src={{character!.SrcImage}} >
+    <img id="chID" mat-card-md-image src={{character!.SrcImage}} >
   </mat-card-title-group>
   <mat-card-content id="card-content">
     {{character!.Background}}
   </mat-card-content>
 </mat-card>
+
