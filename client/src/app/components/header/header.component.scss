@@ -2,31 +2,28 @@
 
 .header-wrapper{
   background-color: mat-color($md-accent,500);
+  max-height: 100px;
+  min-height: 80px;
   height: 8vw;
   width: 100vw;
+  box-shadow: 10px 10px 25px !important;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
-
 
 .button-wrapper{
-
-  background-color: rebeccapurple;
   float: right;
-}
-.raised-bt{
-  padding: 3px;
+  height: 8vw;
+  padding: 2vw;
+  padding-right: 4vw;
 }
 
 .title{
-
-  background-color: rebeccapurple;
   width: fit-content;
   height: 8vw;
-
 }
 .title-text{
-  padding-top: 3vw;
-  padding-left: 1vw;
-
+  padding-top: 2vw;
+  padding-left: 2vw;
 }
-
 
