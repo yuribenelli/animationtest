@@ -1,21 +1,32 @@
+@import '../../../styles.scss';
+
 .header-wrapper{
-  background-color: gray;
-  height: 100px;
-  width: 100%;
+  background-color: mat-color($md-accent,500);
+  height: 8vw;
+  width: 100vw;
 }
+
 
 .button-wrapper{
+
+  background-color: rebeccapurple;
   float: right;
 }
+.raised-bt{
+  padding: 3px;
+}
 
-#title{
-  display: inline;
+.title{
+
+  background-color: rebeccapurple;
   width: fit-content;
-  font-size: 30pt;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 8vw;
+
+}
+.title-text{
+  padding-top: 3vw;
+  padding-left: 1vw;
+
 }
 
-.raised-btn{
-  padding: 10 px;
-  margin: 10px;
-}
+
