@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MatInputModule} from '@angular/material/input';
+import { Character } from 'src/app/model/character.model';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HtmlParser } from '@angular/compiler';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  newCharacter? : Character;
+
+
   constructor() { }
 
   ngOnInit(): void {
+
+
   }
+  onClick(){
+
+
+
+
+  }
+
+
+
 
 }

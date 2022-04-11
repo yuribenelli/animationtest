@@ -1,5 +1,6 @@
 @import '../../../styles.scss';
 
+
 .header-wrapper{
   background-color: mat-color($md-accent,500);
   max-height: 100px;
@@ -28,6 +29,7 @@
 }
 
 #newPg{
+  display: block;
   margin: 1vw;
   margin-left: 2vw;
   background-color: red;

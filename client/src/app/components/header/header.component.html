@@ -1,7 +1,11 @@
 <section id="header">
   <div class="header-wrapper">
     <div class="button-wrapper">
-      <button class="raised-btn" mat-raised-button color="primary">New</button>
+      <button
+      class="raised-btn"
+      mat-raised-button
+      color="primary"
+      id="new-btn" (click)="onClick()">New</button>
 
     </div>
 
@@ -12,11 +16,16 @@
   </div>
 </section>
 
-<section id="newPg">
-  <div id="name-input">
-    <label>Name: </label>
-    <input type="text" name="Nome" id="ch.name">
-  </div>
+<div id="newPg">
+  <form id="newPgForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input type="text" matInput id="name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Race</mat-label>
+      <input type="text" matInput>
+    </mat-form-field>
+  </form>
 
-
-</section>
+</div>
