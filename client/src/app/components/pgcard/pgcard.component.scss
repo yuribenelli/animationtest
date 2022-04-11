@@ -1,4 +1,17 @@
-.example-card {
+@import '../../../styles.scss';
+
+.character-card {
+  display: inline-block;
   max-width: 400px;
-  margin-bottom: 8px;
+  min-width: 250px;
+  max-height: 350px;
+  min-height: 300px;
+  border-radius: 2px;
+  background-color: mat-color($ns-primary,800);
+  position: relative;
+  margin: 10px;
+  border-radius: 2px;
+  box-shadow: 10px 10px 25px !important;
+
+
 }

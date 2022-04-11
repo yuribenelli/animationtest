@@ -1,0 +1,21 @@
+.header-wrapper{
+  background-color: gray;
+  height: 100px;
+  width: 100%;
+}
+
+.button-wrapper{
+  float: right;
+}
+
+#title{
+  display: inline;
+  width: fit-content;
+  font-size: 30pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.raised-btn{
+  padding: 10 px;
+  margin: 10px;
+}
