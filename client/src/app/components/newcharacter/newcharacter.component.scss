@@ -1,1 +1,10 @@
 @import '../../../styles.scss';
+
+
+.inputChField{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#textArea{
+  -ms-grid-row-span: 5;
+}
