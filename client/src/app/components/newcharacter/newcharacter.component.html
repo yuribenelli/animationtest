@@ -1,23 +1,25 @@
-<form id="newPgForm">
-
+<form id="newPgForm" (ngSubmit)="onAddCharacter(f)" #f="ngForm">
 <table>
   <tr>
     <td>
       <mat-form-field class="inputChField">
         <mat-label>Name</mat-label>
-        <input type="text" matInput id="name">
+        <input type="text" matInput id="name" name="name"
+        [ngModel]="newCharacter.Name">
       </mat-form-field>
     </td>
     <td>
       <mat-form-field class="inputChField">
         <mat-label >Race</mat-label >
-        <input type="text" matInput>
+        <input type="text" matInput id="race" name="race"
+        ngModel>
       </mat-form-field>
     </td>
     <td>
       <mat-form-field class="inputChField">
         <mat-label>Class</mat-label>
-        <input type="text" matInput>
+        <input type="text" matInput id="class" name="class"
+        ngModel>
       </mat-form-field>
     </td>
   </tr>
@@ -26,23 +28,32 @@
     <td>
       <mat-form-field class="inputChField">
         <mat-label>Base Damage</mat-label>
-        <input type="number" matInput>
+        <input type="number" matInput id="base_damage" name="base_damage"
+        ngModel>
       </mat-form-field>
     </td>
     <td>
       <mat-form-field class="inputChField">
         <mat-label>HP</mat-label>
-        <input type="number" matInput>
+        <input type="number" matInput id="hp" name="hp"
+        ngModel>
       </mat-form-field>
     </td>
     <td>
       <mat-form-field class="inputChField">
         <mat-label>BackGround</mat-label>
-        <input type="text" matInput>
+        <input type="text" matInput id="background" name="background"
+        ngModel>
         <!-- <textarea matInput class="textArea"></textarea> -->
       </mat-form-field>
     </td>
   </tr>
 </table>
 </form>
-<button mat-raised-button color="primary" id="saveBtn">Save</button>
+<button mat-raised-button
+color="primary"
+type="submit"
+id="saveBtn">
+
+Save
+</button>

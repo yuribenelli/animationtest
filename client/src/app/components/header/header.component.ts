@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatInputModule} from '@angular/material/input';
-import { Character } from 'src/app/model/character.model';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { HtmlParser } from '@angular/compiler';
-import { startWith } from 'rxjs';
-import { coerceStringArray } from '@angular/cdk/coercion';
+
 
 @Component({
   selector: 'app-header',
@@ -13,8 +8,6 @@ import { coerceStringArray } from '@angular/cdk/coercion';
 })
 export class HeaderComponent implements OnInit {
 
-  //character struct
-  newCharacter? : Character;
   //is new Character Session visible?
   isVisible : boolean = false;
   //
