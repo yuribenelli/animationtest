@@ -1,5 +1,6 @@
-<form id="newPgForm" (ngSubmit)="onAddCharacter(f)" #f="ngForm">
-<table>
+<form id="newPgForm" (ngSubmit)="onAddCharacter(f)" #f="ngForm" name="form">
+{{newCharacter.Name}}
+  <table>
   <tr>
     <td>
       <mat-form-field class="inputChField">
@@ -53,7 +54,8 @@
 <button mat-raised-button
 color="primary"
 type="submit"
-id="saveBtn">
+id="saveBtn"
+(click)="onAddCharacter(f)">
 
 Save
 </button>

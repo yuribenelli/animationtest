@@ -23,7 +23,18 @@ export class NewcharacterComponent implements OnInit {
 
     const value = form.value
 
+    this.newCharacter.Name = value.Name
+    this.newCharacter.Race = value.race
+    this.newCharacter.Class = value.class
+    this.newCharacter.BaseDamage = value.base_damage
+    this.newCharacter.Hp = value.hp
+    this.newCharacter.Background = value.background
     console.log(this.newCharacter.Name)
+    console.log(this.newCharacter.Race)
+    console.log(this.newCharacter.Class)
+    console.log(this.newCharacter.BaseDamage)
+    console.log(this.newCharacter.Hp)
+    console.log(this.newCharacter.Background)
   }
 
 }
