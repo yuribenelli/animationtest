@@ -3,9 +3,8 @@
 
 .header-wrapper{
   background-color: mat-color($md-accent,500);
-  max-height: 100px;
+  //max-height: 100px;
   min-height: 80px;
-  height: 8vw;
   width: 100vw;
   box-shadow: 5px 5px 25px !important;
   border-bottom-left-radius: 1vw;
@@ -29,10 +28,7 @@
 }
 
 #newPg{
-  display: block;
-  margin: 1vw;
-  margin-left: 2vw;
-  background-color: red;
+  background-color: mat-color($md-accent,500);
 }
 
 

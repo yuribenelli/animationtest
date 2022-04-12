@@ -1,5 +1,5 @@
 <section id="header">
-  <div class="header-wrapper">
+  <div class="header-wrapper" [ngStyle]="{height: height}">
     <div class="button-wrapper">
       <button
       class="raised-btn"
@@ -14,9 +14,12 @@
     <h1 class="title-text">{{headerLabel}}</h1>
     </div>
 
+    <section id="newPg"  >
+      <app-newcharacter [ngStyle]="{display: getDisplay()}"></app-newcharacter>
+    </section>
+
   </div>
+
 </section>
 
-<section id="newPg" *ngIf="isVisible">
-  <app-newcharacter></app-newcharacter>
-</section>
+
