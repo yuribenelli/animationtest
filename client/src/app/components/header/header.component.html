@@ -3,29 +3,20 @@
     <div class="button-wrapper">
       <button
       class="raised-btn"
+      type="button"
       mat-raised-button
       color="primary"
-      id="new-btn" (click)="onClick()">New</button>
+      id="new-btn" (click)="onClick()">{{newBtnState}}</button>
 
     </div>
 
     <div class="title">
-    <h1 class="title-text">Saved Character</h1>
+    <h1 class="title-text">{{headerLabel}}</h1>
     </div>
 
   </div>
 </section>
 
-<section id="newPg" [style.display]="isVisible ? 'block':'none'">
-  <form id="newPgForm">
-    <mat-form-field>
-      <mat-label>Name</mat-label>
-      <input type="text" matInput id="name">
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Race</mat-label>
-      <input type="text" matInput>
-    </mat-form-field>
-  </form>
-
+<section id="newPg" *ngIf="isVisible">
+  <app-newcharacter></app-newcharacter>
 </section>

@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { NewcharacterComponent } from './components/newcharacter/newcharacter.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatInputModule} from '@angular/material/input';
     AppComponent,
     HeaderComponent,
     CharlistComponent,
-    PgcardComponent
+    PgcardComponent,
+    NewcharacterComponent
   ],
   imports: [
     FormsModule,
