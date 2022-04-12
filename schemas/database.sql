@@ -1,6 +1,6 @@
 CREATE DATABASE animationtest
     WITH 
-    OWNER = postgres
+    OWNER = animationtest
 ENCODING = 'UTF8'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;

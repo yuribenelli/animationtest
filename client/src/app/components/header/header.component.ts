@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
       this.newBtnState ='Close'
       this.headerLabel ="New Character"
       this.height = '30vw'
-      console.log(this.height)
+
     }else{
       this.isVisible = false
       this.newBtnState ='New'
