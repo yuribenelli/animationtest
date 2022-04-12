@@ -12,7 +12,7 @@ type Config struct {
 var currentconfig Config
 
 func InitConfig() {
-	dsn := "host=localhost user=postgres password=Mindsrl dbname=animationtest port=5432 sslmode=disable"
+	dsn := "host=localhost user=animationtest password=Mindsrl dbname=animationtest port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)
