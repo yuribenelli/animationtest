@@ -12,16 +12,14 @@
   margin-top: 4vw;
   border-style: solid;
   border-color: mat-color($ns-accent,800);
-  box-shadow: 10px 10px 25px !important;
-  animation: mouseLeaves 0.5s;
+  box-shadow: 5px 5px 25px !important;
   border-width: 4px;
+  animation: mouseLeaves 0.5s;
 }
 .character-card:hover{
   animation-name: mouseHover;
   animation-duration: 0.5s;
   animation-fill-mode: both;
-
-
 }
 @keyframes mouseHover {
   from {right: 0;}

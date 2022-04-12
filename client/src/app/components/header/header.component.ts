@@ -3,6 +3,7 @@ import {MatInputModule} from '@angular/material/input';
 import { Character } from 'src/app/model/character.model';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { HtmlParser } from '@angular/compiler';
+import { startWith } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ import { HtmlParser } from '@angular/compiler';
 export class HeaderComponent implements OnInit {
 
   newCharacter? : Character;
-
+  isVisible : boolean = false;
 
   constructor() { }
 
@@ -21,10 +22,11 @@ export class HeaderComponent implements OnInit {
 
   }
   onClick(){
-
-
-
-
+    if (this.isVisible == false){
+      this.isVisible = true
+    }else{
+      this.isVisible = false
+    }
   }
 
 
